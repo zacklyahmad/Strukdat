@@ -1,0 +1,26 @@
+#include <iostream>
+#include <queue>
+
+using namespace std;
+
+int main() {
+
+  queue<string> animals;
+
+  animals.push("Elephant");
+  animals.push("Tiger");
+  animals.push("Buffalo");
+  
+  cout << "Queue: ";
+
+  while(!animals.empty()) {
+
+    cout << animals.front() << ", ";
+
+    animals.pop();
+  }
+
+  cout << endl;
+ 
+  return 0;
+}
