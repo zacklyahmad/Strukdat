@@ -1,0 +1,22 @@
+#include <iostream>
+#include <stack>
+
+using namespace std;
+
+int main() {
+
+  stack<string> fruits;
+
+  fruits.push("Grape");
+  fruits.push("Lemon");
+  fruits.push("Peach");
+  
+  cout << "Stack: ";
+
+   while(!fruits.empty()) {
+    cout << fruits.top() << ", ";
+    fruits.pop();
+  }
+ 
+  return 0;
+}
